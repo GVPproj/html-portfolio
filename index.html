@@ -32,9 +32,8 @@
         display: grid;
         place-content: center;
         font-size: 1.25rem;
-        font-weight: 600;
+        font-weight: 400;
         text-align: center;
-        letter-spacing: 1px;
       }
       p {
         margin: 0;
@@ -68,16 +67,30 @@
         border-bottom: 0.5px dotted currentColor;
         text-decoration: none;
         transition: ease-in 100ms;
-        font-weight: 400;
+        font-weight: 300;
       }
       a:hover {
         color: var(--color-secondary);
         border-color: currentColor;
       }
-      .email {
-        border: none;
-        margin-top: 2rem;
+      .cta-button {
+        margin: 2rem auto 0;
+        padding: 0.5rem 1rem;
+        font: inherit;
+        font-size: 1rem;
         font-weight: 200;
+        color: var(--color-accent);
+        background-color: var(--color-secondary-light);
+        border-radius: 50px;
+        border: 1px dotted var(--color-accent);
+        max-width: max-content;
+        cursor: pointer;
+        transition: ease-in 100ms;
+      }
+      .cta-button:hover,
+      .cta-button:active {
+        background-color: var(--color-accent);
+        color: var(--color-secondary-light);
       }
     </style>
   </head>
@@ -111,10 +124,13 @@
         >A Javascript colour scheme generator.</a
       >
     </p>
-    <a
-      class="email"
-      href="mailto:grahamvanpelt@gmail.com?subject=Mail from the portfolio site"
-      ><em>email me?</em></a
+    <button
+      type="button"
+      class="cta-button"
+      onclick="location.href='mailto:grahamvanpelt@gmail.com';"
+      value="Email Me"
     >
+      <em>email me?</em>
+    </button>
   </body>
 </html>
