@@ -38,11 +38,12 @@
       }
       p {
         margin: 0;
+        max-width: 65ch;
       }
       P:last-of-type {
         margin-top: 1em;
       }
-      span {
+      h1 {
         background: -webkit-linear-gradient(
           45deg,
           var(--color-secondary),
@@ -51,7 +52,13 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 2rem;
+        font-size: 2.25rem;
+        font-weight: 600;
+      }
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--color-accent);
       }
       small {
         font-size: 0.85rem;
@@ -75,12 +82,34 @@
     </style>
   </head>
   <body>
-    <p><span>graham van pelt</span></p>
+    <h1>grahamvanpelt.dev</h1>
+    <h2>Some websites I've built...</h2>
     <p>
-      <a href="https://bloomorganicbandb.com/" target="_blank">some</a>
-      <a href="https://groundwaves.live/" target="_blank">pages</a>
-      <a href="https://links.grahamvanpelt.com/" target="_blank">i've</a>
-      <a href="https://www.grahamvanpelt.com/" target="_blank">built</a>
+      <a href="https://bloomorganicbandb.com/" target="_blank">A BnB website.</a
+      ><br />
+      <a href="https://links.grahamvanpelt.com/" target="_blank"
+        >A linktree-style ReactJS app.</a
+      ><br />
+      <a href="https://groundwaves.live/" target="_blank"
+        >A music festival page.</a
+      ><br />
+      <a href="https://www.grahamvanpelt.com/" target="_blank"
+        >A musician site.</a
+      >
+    </p>
+    <h2>Some bootcamp projects...</h2>
+    <p>
+      <a href="https://gvp-react-quizzical.netlify.app/" target="_blank"
+        >An API-based quiz app.</a
+      ><br />
+      <a href="https://gvp-tenzies-react.netlify.app/" target="_blank"
+        >A ReactJS dice game.</a
+      ><br />
+      <a
+        href="https://gvpproj.github.io/colour-scheme-generator/"
+        target="_blank"
+        >A Javascript colour scheme generator.</a
+      >
     </p>
     <a
       class="email"
